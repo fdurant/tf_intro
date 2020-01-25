@@ -1,5 +1,6 @@
 import tensorflow as tf
 from tensorflow import keras
+import numpy as np
 
 # Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Ed.
 # Chapter 10: Introduction to ANNs with Keras
@@ -49,3 +50,12 @@ history = model.fit(
     epochs=30,
     validation_data=(X_valid, y_valid))
 
+model.evaluate(X_test, y_test)
+
+X_new = X_test[:3]
+y_proba = model.predict(X_new)
+print(y_proba.round(2))
+
+y_pred = model.predict_classes(X_new)
+print(y_pred)
+print(np.array(class_names)[y_pred])
