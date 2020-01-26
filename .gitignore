@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # TensorFlow and Keras
-.Keras
+.keras
+.sklearndata
