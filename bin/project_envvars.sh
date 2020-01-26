@@ -1,0 +1,6 @@
+#!/bin/bash
+export PROJECT_NAME=tf_intro
+export WORKENV_DIR=${HOME}/work
+export PROJECTHOME_DIR=${WORKENV_DIR}/${PROJECT_NAME}
+export TF_INTRO_IMAGE_TAG=${PROJECT_NAME}
+export DOCKER_DIR=${PROJECTHOME_DIR}/docker
